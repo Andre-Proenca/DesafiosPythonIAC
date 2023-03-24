@@ -1,0 +1,7 @@
+cont = [0,1,2,3,4,5,6,7,8,9,10]
+
+valor = int(input("Digite o número: "))
+
+for i in cont:
+
+    print(f'Resultado {valor * i}')
