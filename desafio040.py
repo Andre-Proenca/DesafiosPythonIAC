@@ -9,8 +9,8 @@ maior = 0
 menor = 10
 
 for i in nomes:
-    altura = float(input(f'Informe a altura da pessoa {i}: '))
-    cod_matricula = input(f'Informe o cod da matricula da pessoa {i}: ')
+    altura = float(input(f'Informe a altura do aluno(a) {i}: '))
+    cod_matricula = input(f'Informe o cod da matricula do aluno(a) {i}: ')
     alturas.append(altura)
     matriculas.append(cod_matricula)
     if altura > maior:
@@ -21,5 +21,5 @@ for i in nomes:
 maiorPos = alturas.index(maior)
 menorPos = alturas.index(menor)
 
-print(f'Altura do maior aluno> Nome: {nomes.__getitem__(maiorPos)} | Altura: {alturas.__getitem__(maiorPos)}')
-print(f'Altura do menor aluno> Nome: {nomes.__getitem__(menorPos)} | Altura: {alturas.__getitem__(menorPos)}')
+print(f'Altura do maior aluno> Código da matricula: {matriculas.__getitem__(maiorPos)} | Altura: {alturas.__getitem__(maiorPos)}')
+print(f'Altura do menor aluno> Código da matricula: {matriculas.__getitem__(menorPos)} | Altura: {alturas.__getitem__(menorPos)}')
